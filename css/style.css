@@ -1,26 +1,24 @@
-
 body {
     font-family: Helvetica, Sans-Serif;
 }
-header{
-    height: 50px;
+header {
     width: 100%;
+    height: 50px;
 }
 .logo {
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 2%;
+    left: 2%;
 }
-.logoa {
-    font-size: 18px;
-    font-weight: 700;
+.logo a {
+    font-size: 17px;
     color: #FA6980;
+    font-weight: bold;
 }
-/* Navigation */
-.navigation{
+.navigation {
     position: absolute;
-    top: 18px;
-    right: 90px;
+    top: 2%;
+    right: 5%;
 }
 .navul {
     display: flex;
@@ -31,6 +29,7 @@ header{
 .navlia {
     color: #343638;
     opacity: 0.6;
+    font-weight: bold;
     font-size: 15px;
 }
 .active {
@@ -40,7 +39,7 @@ header{
 .proffile {
     position: absolute;
     right: 30px;
-    top: 7px;
+    top:0.9%;
 }
 .proffileimg {
     width:40px;
@@ -52,28 +51,26 @@ header{
     transition: 0.2s ease-in;
     width: 42px;
 }
-/* Landing Section */
-.landingwrap {
-    width: 100%;
-    height: 650px;
-    display: flex;
-
+/* Section */
+.landingsection {
+    width:100%;
+    height: 640px;
 }
 .leftsect{
     display: flex;
 }
-.leftwrap {
-    position: relative;
-    width: 100%;
+.leftimg {
+    width: 840px;
 }
-.leftwrapimg {
-    width: 900px;
-    height: 100%;
+.leftimg img {
+    width:100%;
+    position: relative;
 }
 .lefttext {
     position: absolute;
     top: 277px;
     left: 100px;
+    width: 53%;
 }
 .lefttext h1 {
     font-size: 24px;
@@ -104,9 +101,10 @@ header{
     height: 40px;
     margin-top: 15px;
 }
-/* Rigth */
+/* right */
 .morenews {
     margin-left: 100px;
+    width: 40%;
 }
 .moretext {
     position: absolute;
@@ -192,6 +190,7 @@ header{
     font-weight: 500;
     font-size: 17px;
 }
+
 /* Trend */
 .trending {
     width: 1160px;
@@ -214,6 +213,8 @@ header{
 }
 .img img {
     width: 100%;
+    border-radius: 6px;
+
 }
 .boxh1{
     font-size: 16px;
@@ -245,29 +246,32 @@ header{
     color: #A6ADB4;
     font-size: 15px;
 }
-/* Happens */
-.hapleft {
-    display: flex;
-    margin-left: 250px;
+/* Section 3 */
+.lefthappeingwrap {
+    width: 1160px;
+    height: 960px;
+    margin: 40px auto;
 }
-.happenstitle h1 {
-    margin-left: 250px;
+.titlehapp {
+    width: 700px;
+}
+.titlehapp h1{
     font-size: 24px;
     font-weight: bold;
 }
-.leftwraper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 760px;
-    height: 850px;
+/* lefthap */
+.lefthap {
+    width: 770px;
+    height: 900px;
+    margin-top: 10px;
 }
-
-.hapimg1 {
+.city {
     position: relative;
-    margin-top: 25px;
 }
-.hapimg1 img{
-    width: 760px;
+.city img {
+    width: 100%;
+    height: 430px;
+    border-radius: 6px;
 }
 .cityh5,.cityh1 ,.cityp {
     position: absolute;
@@ -290,9 +294,9 @@ header{
     font-size: 16px;
 }
 .citytime {
-    position: relative;
+    position: absolute;
     display: flex;
-    bottom: 10%;
+    bottom: 9%;
     left: 4%;
 }
 .citytimes ,.citytimeh5 {
@@ -302,13 +306,18 @@ header{
 .citytimeh5{
     margin-left: 5px;
 }
-.travel{
+/* Travel */
+.travel {
+    margin-top: 45px;
     position: relative;
 }
-.travel  img{
-    width: 760px;
-    height: 400px;    
+.travel img {
+    width: 100%;
+    height: 430px;
+    border-radius: 6px;
+
 }
+
 .travelh5 , .travelp , .travelh1 {
     position: absolute;
     left: 4%;
@@ -330,9 +339,9 @@ header{
     font-size: 16px;
 }
 .travelclocl{
-    position: relative;
+    position: absolute;
     display: flex;
-    bottom: 10%;
+    bottom: 9%;
     left: 4%;
 }
 .travelclocl {
@@ -342,22 +351,27 @@ header{
 .cloclh5 {
     margin-left: 5px;
 }
-.happs {
+.lefthappeingwrap {
     display: flex;
+    flex-wrap: wrap;
 }
-
-/* right */
+/* Rithr */
 .rightwraper {
     display: flex;
     flex-direction: column;
+    width: 360px;
+    height: 951px;
 }
 .righti {
+    display: flex;
     margin-left: 90%;
-    margin-top: -5%;
+    margin-top: -33px;
 }
+
 .righti i {
     font-size: 18px;
-}
+padding-left: 25px;
+    }
 .leftbangle {
     color: #A6ADB4;
     margin-right: 10px;
@@ -369,9 +383,12 @@ header{
     position: relative;
     margin-top:7%;
     margin-left: 15%;
+    width: 360px;
 }
 .small img {
-    width: 360px;
+    width: 100%;
+    object-fit: cover;
+    height: 210px;
     border-radius: 6px;
 }
 .small h1 {
@@ -389,4 +406,95 @@ header{
 .smallhou {
     font-size: 15px;
     margin-left: 5px;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #A6ADB4;
+    position: relative;
+}
+.fotr {
+    display: flex;
+    position: absolute;
+    top: 56px;
+    left: 10%;
+}
+.logofooter {
+    color: #fff;
+    font-weight: bold;
+}
+.navfooter {
+    margin-left: 57px;
+}
+.navfot {
+    display: flex;
+}
+.fotli {
+    margin-bottom: 10px;
+}
+.fotli a{ 
+    color: #CBD0D3;
+    font-weight: bold;
+}
+.fotul2 {
+    margin-left: 20px;
+}
+.fotli2 {
+    margin-bottom: 10px;
+}
+
+.fotli2 a{ 
+    color: #CBD0D3;
+    font-weight: bold;
+}
+.fotul3 {
+    margin-left: 20px;
+}
+.fotli3 {
+    margin-bottom: 10px;
+}
+
+.fotli3 a{ 
+    color: #CBD0D3;
+    font-weight: bold;
+}
+.mail {
+    margin-left: 30%;
+    width: 300px;
+}
+#email {
+    width: 240px;
+    height: 40px;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+}
+.arrowss {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    padding-left: 200px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.mail h5 {
+    width: 300px;
+    color: #CBD0D3;
+    font-size: 12px;
+    margin-top: 14px;
+}
+
+.social {
+    display: flex;
+    margin-left: 10%;
+    width: 50px;
+    height: 20px;
+}
+.social i {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
 }
